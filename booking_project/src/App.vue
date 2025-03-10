@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <nav class="header">
-      <RouterLink class="btn btn-dark m-2" to="/">🏛</RouterLink> 
+      <RouterLink class="btn btn-dark m-2" to="/">☠️</RouterLink> 
       <RouterLink class="btn btn-dark m-2" to="/">üres</RouterLink>
       <RouterLink class="btn btn-dark m-2" to="/">üres</RouterLink>
       <RouterLink class="btn btn-dark m-2" to="/">üres</RouterLink>
