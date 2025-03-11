@@ -12,12 +12,10 @@
   <script setup>
   import { useRoute, useRouter } from 'vue-router';
   import { ref } from 'vue';
-  import { useCounterStore } from '../store';
   import { useToast } from 'vue-toastification';
   
   const route = useRoute();
   const router = useRouter();
-  const store = useBookingStore();
   const toast = useToast();
   
   const time = route.params.time;

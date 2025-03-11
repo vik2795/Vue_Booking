@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router';
     <h2 class="cim">Tattoo</h2>
 </div>
 
+
 </template>
 
 <style scoped>
