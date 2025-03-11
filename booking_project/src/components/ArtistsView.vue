@@ -5,7 +5,7 @@
    <div class="container mt-3">
  
   <div class="card" style="width:400px">
-    <img class="card-img-top" src="../img/indri.png" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="/booking_project/img/indri.PNG" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">Ogechukwukamma Chinyere</h4>
       <a href="#" class="btn btn-dark">See Profile</a>
@@ -18,14 +18,14 @@
       <h4 class="card-title">Method Playa Da T</h4>
       <a href="#" class="btn btn-dark">See Profile</a>
     </div>
-    <img class="card-img-bottom" src="./img/salami.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-bottom" src="/booking_project/img/ivan.jpg" alt="Card image" style="width:100%">
   </div>
 </div>
 
 <div class="container mt-3">
 
   <div class="card" style="width:400px">
-    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="/booking_project/img/spread.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">Naamah Ceridwen</h4>
       <a href="#" class="btn btn-dark">See Profile</a>
@@ -37,7 +37,7 @@
       <h4 class="card-title">Quinctus Markos</h4>
       <a href="#" class="btn btn-dark">See Profile</a>
     </div>
-    <img class="card-img-bottom" src="../bootstrap4/img_avatar6.png" alt="Card image" style="width:100%">
+    <img class="card-img-bottom" src="/booking_project/img/salami.jpg" alt="Card image" style="width:100%">
   </div>
 </div>
 </div>
@@ -47,8 +47,9 @@
 <script>
     import { useRoute, useRouter } from 'vue-router';
     import { ref } from 'vue';
+    import {  createStaticVNode as _createStaticVNode, openBlock as _openBlock,  } from "vue"
 
-    const name=ref()
+    
     
 </script>
 <style scoped>
