@@ -1,30 +1,57 @@
 <template>
-    <div class="container">
-      <h2>Foglalás: {{ time }}</h2>
-      <form @submit.prevent="submitForm">
-        <input v-model="name" placeholder="Név" required>
-        <input v-model="phone" placeholder="Telefonszám" required>
-        <button type="submit">Foglalás</button>
-      </form>
+<div class="row">
+
+
+   <div class="container mt-3">
+ 
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="../img/indri.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Ogechukwukamma Chinyere</h4>
+      <a href="#" class="btn btn-dark">See Profile</a>
     </div>
-  </template>
+  </div>
   
-  <script setup>
-  import { useRoute, useRouter } from 'vue-router';
-  import { ref } from 'vue';
-  import { useToast } from 'vue-toastification';
+
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Method Playa Da T</h4>
+      <a href="#" class="btn btn-dark">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="./img/salami.jpg" alt="Card image" style="width:100%">
+  </div>
+</div>
+
+<div class="container mt-3">
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Naamah Ceridwen</h4>
+      <a href="#" class="btn btn-dark">See Profile</a>
+    </div>
+  </div>
   
-  const route = useRoute();
-  const router = useRouter();
-  const toast = useToast();
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Quinctus Markos</h4>
+      <a href="#" class="btn btn-dark">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="../bootstrap4/img_avatar6.png" alt="Card image" style="width:100%">
+  </div>
+</div>
+</div>
+
+</template>
   
-  const time = route.params.time;
-  const name = ref('');
-  const phone = ref('');
-  
-  const submitForm = async () => {
-    await store.bookSlot(time, name.value, phone.value);
-    toast.success('Foglalás sikeres!');
-    router.push('/');
-  };
-  </script>
+<script>
+    import { useRoute, useRouter } from 'vue-router';
+    import { ref } from 'vue';
+
+    const name=ref()
+    
+</script>
+<style scoped>
+
+
+</style>

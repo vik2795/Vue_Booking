@@ -1,9 +1,32 @@
 <template>
 <div class="bgc">
-    <h2 class="cim">Booking</h2>
+  <div class="container">
+      <h2>Foglalás: {{ time }}</h2>
+      <form @submit.prevent="submitForm">
+        <input v-model="name" placeholder="Név" required>
+        <input v-model="phone" placeholder="Telefonszám" required>
+        <button type="submit">Foglalás</button>
+      </form>
+    </div>
 </div>
 </template>
 <script>
+  import { useRoute, useRouter } from 'vue-router';
+  import { ref } from 'vue';
+  import { useToast } from 'vue-toastification';
+  
+  const route = useRoute();
+  const router = useRouter();
+  const toast = useToast();
+
+  const name = ref('');
+  const phone = ref('');
+  
+  const submitForm = async () => {
+    await store.bookSlot(time, name.value, phone.value);
+    toast.success('Foglalás sikeres!');
+    router.push('/');
+  };
 
 </script>
 <style scoped>
@@ -15,6 +38,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  color:#caaaaa;
   
 
 }
