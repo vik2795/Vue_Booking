@@ -15,8 +15,8 @@
       </select>
 
 
-      <label class="idopont">Válasszon a napok közül!</label>
-      <select v-model="time" class="form-select mb-3">
+      <label class="napok">Válasszon a napok közül!</label>
+      <select v-model="day" class="form-select mb-3">
         <option>Hétfő</option>
         <option>Kedd</option>
         <option>Szerda</option>
@@ -73,6 +73,7 @@ import { Toast } from "bootstrap";
 
 const name = ref("");
 const phone = ref("");
+const day=ref("Hétfő")
 const artist = ref("Naamah Ceridwen");
 const time = ref("08:00");
 

@@ -7,6 +7,19 @@ export const useCounterStore = defineStore('counter', () => {
   function increment() {
     count.value++
   }
-
-  return { count, doubleCount, increment,submitForm }
+  const addNewDate = (w) => {
+    let date;
+    do {
+      let id = Math.round(Math.random() * 1000000000);
+      w.id = id
+      date = workers.booked-day && workers.booked-time.filter((workers) => workers.booked-date && workers.booked-time == workers.booked-date && workers.booked-time)
+    } while (date.length != 0);
+    products.value.push(p)     
+    saveDate(p)
+  }
+  const saveDate = (p) => {
+    axios.post('http://localhost:3000/bolt',p)
+    .then(resp => console.log(resp.status))
+  }
+  return { count, doubleCount, increment,submitForm ,saveDate}
 })
