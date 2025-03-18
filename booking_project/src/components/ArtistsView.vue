@@ -55,7 +55,8 @@ import { RouterLink, RouterView } from 'vue-router';
 {
   margin: 5px;
   margin-top: 50px;
-  
+  background-color: rgb(83, 83, 83);
+  color: rgb(255, 255, 255); 
 
   
 }
