@@ -2,37 +2,52 @@
     "workers": [
       {
         "id": "1",
-        "name": " Ogechukwukamma Chinyere "
+        "name": " Ogechukwukamma Chinyere",
+        "booked-day": "Péntek",
+        "booked-time": "16:00"
         
       },
       {
         "id": "2",
-        "name": " Zodwa Ayanda "
+        "name": " Zodwa Ayanda ",
+        "booked-day": "",
+        "booked-time": ""
     
       },
       {
         "id": "3",
-        "name": "Shrapnel Barrage "
+        "name": "Shrapnel Barrage",
+        "booked-day": "Kedd",
+        "booked-time": "09:00"
+
       
       },
       {
         "id": "4",
-        "name": "Method Playa Da T "
+        "name": "Method Playa Da T",
+        "booked-day": "",
+        "booked-time": ""
      
       },
       {
         "id": "5",
-        "name": "Naamah Ceridwen "
+        "name": "Naamah Ceridwen",
+        "booked-day": "Szerda",
+        "booked-time": "11:00"
     
       },
       {
         "id": "6",
-        "name": "Gouxgii Usaa "
+        "name": "Gouxgii Usaa",
+        "booked-day": "Csötörtök",
+        "booked-time": "15:00"
     
       },
       {
         "id": "7",
-        "name": " Quinctus Markos"
+        "name": "Quinctus Markos",
+        "booked-day": "",
+        "booked-time": ""
       }
     ]
 }
